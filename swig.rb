@@ -14,7 +14,7 @@ class Swig < Formula
 
     depends_on "autoconf" => :build
     depends_on "automake" => :build
-    depends_on "decrement/personal/yodl" => :build
+    depends_on "yodl" => :build
   end
 
   option :universal

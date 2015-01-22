@@ -5,7 +5,7 @@ class Yodl < Formula
   url "https://downloads.sourceforge.net/project/yodl/yodl/3.05.00/yodl_3.05.00.orig.tar.gz"
   sha1 "ec430263ec52c9e6340307182e187aa5a7d128ae"
 
-  depends_on "decrement/personal/icmake" => :build
+  depends_on "icmake" => :build
 
   def install
     # remove hardlink to icmake
