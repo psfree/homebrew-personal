@@ -1,24 +1,21 @@
 cask :v1 => 'synergy' do
-  version '1.7.0-master-9835c72'
+  version 'v1.7.3-stable-efd0108'
 
-  if MacOS.release == :leopard
-    sha256 '8d74f836c4207c20c4b5e607a61af1b915111d4877c886ab51f8ab81e98e1a81'
-    url "http://synergy-project.org/nightly/download/synergy-#{version}-MacOSX105-i386.dmg"
-  elsif MacOS.release == :snow_leopard
-    sha256 'f60afb93b8270619d802c567e655baa3f0176710ed6a656bcdf1a7a54dc59f8f'
-    url "http://synergy-project.org/nightly/download/synergy-#{version}-MacOSX106-i386.dmg"
+  if MacOS.release == :snow_leopard
+    sha256 'fe6495c8714b0cf1796a053f4153836191a8a514b81f2464c0fa1f6492020497'
+    url "http://synergy-project.org/files/nightly/synergy-#{version}-MacOSX106-i386.dmg"
   elsif MacOS.release == :lion
-    sha256 'dbbc7e6bf1afacbe3913fb3d8790251539e5d8485428a36ec7ca74088ac6a5ec'
-    url "http://synergy-project.org/nightly/download/synergy-#{version}-MacOSX107-x86_64.dmg"
+    sha256 '189e6eb0753a8f3acacfd76172bdbd71ba82cdb7d53af70657bd8c7486d3203b'
+    url "http://synergy-project.org/files/nightly/synergy-#{version}-MacOSX107-x86_64.dmg"
   elsif MacOS.release == :mountain_lion
-    sha256 '4122e8a1eec37ee734f7fce68028610d569901b841bb20b89360242d1c1ff78d'
-    url "http://synergy-project.org/nightly/download/synergy-#{version}-MacOSX108-x86_64.dmg"
+    sha256 '774414cb53d40b67b3afe64357b1593dd8c514752b731e0b46db9609b9dbee2d'
+    url "http://synergy-project.org/files/nightly/synergy-#{version}-MacOSX108-x86_64.dmg"
   elsif MacOS.release == :mavericks
-    sha256 '326394ab001767a2e70d1f5dd0dc30048330031ea61a832fa6b569c939298455'
-    url "http://synergy-project.org/nightly/download/synergy-#{version}-MacOSX109-x86_64.dmg"
+    sha256 '898b0c35ca69918e30e72bf1aaabbf17cb612c80516145034d52f6155f8edfc5'
+    url "http://synergy-project.org/files/nightly/synergy-#{version}-MacOSX109-x86_64.dmg"
   else
-    sha256 '259dd8367e0d9b6152e93d50854687d54714f649b6b018949621ba2194b3f987'
-    url "http://synergy-project.org/nightly/download/synergy-#{version}-MacOSX1010-x86_64.dmg"
+    sha256 '58fb287a2a48e6723615c8eb858a7fc6981c677c4b78330118f720c0f493f88f'
+    url "http://synergy-project.org/files/nightly/synergy-#{version}-MacOSX1010-x86_64.dmg"
   end
 
   homepage 'http://synergy-project.org'
@@ -27,7 +24,6 @@ cask :v1 => 'synergy' do
   app 'Synergy.app'
 
   depends_on :macos => %w{
-                          :leopard
                           :snow_leopard
                           :lion
                           :mountain_lion
