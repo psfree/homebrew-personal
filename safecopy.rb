@@ -1,5 +1,3 @@
-require "formula"
-
 class Safecopy < Formula
   homepage "http://safecopy.sourceforge.net"
   url "https://downloads.sourceforge.net/project/safecopy/safecopy/safecopy-1.7/safecopy-1.7.tar.gz"

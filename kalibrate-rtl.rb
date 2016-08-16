@@ -1,5 +1,3 @@
-require 'formula'
-
 class KalibrateRtl < Formula
   homepage 'https://github.com/steve-m/kalibrate-rtl'
   head "https://github.com/steve-m/kalibrate-rtl.git"

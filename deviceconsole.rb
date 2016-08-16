@@ -1,9 +1,6 @@
-require "formula"
-
 class Deviceconsole < Formula
-  homepage ""
+  homepage "http://rpetri.ch"
   head "https://github.com/rpetrich/deviceconsole.git"
-  sha1 ""
 
   def install
     system "make"

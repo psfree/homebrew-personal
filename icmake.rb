@@ -1,9 +1,7 @@
-require 'formula'
-
 class Icmake < Formula
   homepage 'http://icmake.sourceforge.net/'
-  url 'http://downloads.sourceforge.net/project/icmake/icmake/7.22.00/icmake_7.22.00.orig.tar.gz'
-  sha1 '5b3b5a629b8b47276832fa6672279d4c4147c639'
+  url 'https://downloads.sourceforge.net/project/icmake/icmake/7.22.01/icmake_7.22.01.orig.tar.gz'
+  sha256 'b522e7937e9d4f0bec738dfce371673e3c4a8bc9f4d209a51631e5ed59ba66c7'
 
   def install
     # Fix sed syntax
