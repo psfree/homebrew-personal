@@ -3,7 +3,7 @@ require "formula"
 class Safecopy < Formula
   homepage "http://safecopy.sourceforge.net"
   url "https://downloads.sourceforge.net/project/safecopy/safecopy/safecopy-1.7/safecopy-1.7.tar.gz"
-  sha1 "25a82fb0bf96f0d0e56a64dba93277df8035684f"
+  sha256 "42fbed5d4764020eb0f34d95e97a0e14e62d801c3ef80f89bd497d94d39cc4fd"
 
   def install
     system "./configure", "--disable-dependency-tracking",
